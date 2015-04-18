@@ -1,0 +1,7 @@
+name: OpFire
+version: 1.0
+main: nl.galaxias.opfire.OpFire
+
+permissions:
+  opfire.notification:
+    description: Shows a notification when a player who doesn't have permission to use /op tries to use it
