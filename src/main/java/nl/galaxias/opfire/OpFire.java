@@ -17,8 +17,8 @@ public class OpFire extends JavaPlugin {
         plugin = this;
 
         config.addDefault("general.enable-plugin", true);
-        config.addDefault("messages.sent-to-player", "&cDon't try to OP yourself!");
-        config.addDefault("messages.notification", "!player! &ctried to OP himself!");
+        config.addDefault("messages.sent-to-player", "&cDon't try to use !command!");
+        config.addDefault("messages.notification", "!player! &ctried to use !command!");
 
         config.options().copyDefaults(true);
         saveConfig();
