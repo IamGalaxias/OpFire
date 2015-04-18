@@ -22,7 +22,7 @@ public class OpListener implements Listener {
                 if (!(player.isOp())) {
                     event.setCancelled(true);
                     if (event.isCancelled()) {
-                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', OpFire.getPlugin().getConfig().getString("messages.sent-to-player")));
+                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', OpFire.getPlugin().getConfig().getString("messages.sent-to-player")).replaceAll("!command!", args[0]));
 
                         Bukkit.broadcast(ChatColor.translateAlternateColorCodes('&', OpFire.getPlugin().getConfig().getString("messages.notification").replaceAll("!player!", player.getName()).replaceAll("!command", args[0])), "opfire.notification");
 
